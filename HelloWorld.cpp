@@ -8,7 +8,7 @@ int main() {
     cout << "Hello World form me ..." << endl;
     return 0;
 }
-    ....
+
 // if using namespace std then > not used std::
 // if not using namespace std then > used std::
 
