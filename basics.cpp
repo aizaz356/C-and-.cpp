@@ -60,7 +60,7 @@ int main() {
     int v;  // C/C++ are statically typed languages
     v = 2;
 
-    variables_test(v);
+    //variables_test(v);
 
     //char_test();
 

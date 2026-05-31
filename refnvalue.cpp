@@ -16,6 +16,9 @@ void first_function(int v) {
     // cout << " - address of v = " << &v << endl;
 }
 
+
+// runner()
+
 void runner() {
     int x;
     x = 0;
@@ -37,12 +40,14 @@ void runner() {
 void test_array(int b[], int size) {
     cout << "Inner function ... " << endl;
     cout << "Address of b: " << b << endl;
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size; i++) 
         cout << b[i] << "  ";
     cout << endl;
 
     b[0] = 24;
 }
+
+// array_as_args()
 
 void array_as_args() {
     int a[] = {0, 1, 2, 3, 4 };
@@ -60,6 +65,7 @@ int main() {
     //runner();
 
     //array_as_args();
+
     return 0;
 }
 

@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// pointer_test():
+// pointer_test()
 
 void pointer_test() {
     int x = 25;
@@ -25,7 +25,7 @@ void pointer_test() {
     // Let's see this in the tutor ! Yay!
 }
 
-// pointer_test_array():
+// pointer_test_array()
 
 void pointer_test_array() {
     int nums [10];
@@ -73,7 +73,7 @@ void pointer_test_array() {
 }
 
 
-// null_pointer_test():
+// null_pointer_test()
 
 void null_pointer_test() {
     int x = 25;
