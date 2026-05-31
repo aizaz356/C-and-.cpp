@@ -30,43 +30,45 @@ void pointer_test() {
 void pointer_test_array() {
     int nums [10];
 
+    for(int i = 0; i < 10; i++) 
+        nums[i] = i;                      // nums[i] = i+10;
+
+    int*p;
+    p = nums; // notice the missing &
+
+    cout << "Value of nums       : " << nums << endl;
+    cout << "Value of &nums[0]   : " << &nums[0] << endl;
+    cout << "Value of p          : " << p << endl;
+    cout << "Value of *p         : " << *p << endl;
+
+    //return;
+
+
+    
+
+
+
+
+    cout << "Inc p" << endl;
+    p++; // incrementing the pointer
+
+    cout << "Value of p  : " << p << endl;
+    cout << "Value of *p : " << *p << endl;
+
+    //return;
+
+
+
+
+    cout << "Entering loop after resetting p -----" << endl;
+
+    p = &nums[0]; // or nums    -> same as nums
     for(int i = 0; i < 10; i++) {
-        nums[i] = i;
-
-        int*p;
-        p = nums; // notice the missing & operator
-
-        cout << "Value of nums       : " << nums << endl;
-        cout << "Value of &nums[0]   : " << &nums[0] << endl;
-        cout << "Value of p          : " << p << endl;
-        cout << "Value of *p         : " << *p << endl;
-
-        //return;
-
-
-
+        cout << "Value of p  : " << p <<  "   ";
+        cout << "Value of *p : " << *p << "   ";
 
         cout << "Inc p" << endl;
-        p++; // incrementing the pointer
-
-        cout << "Value of p  : " << p << endl;
-        cout << "Value of *p : " << *p << endl;
-
-        //return;
-
-
-
-
-        cout << "Entering loop after resetting p -----" << endl;
-
-        p = &nums[0]; // or nums
-        for(int i = 0; i < 10; i++) {
-            cout << "Value of p  : " << p <<  "   ";
-            cout << "Value of *p : " << *p << "   ";
-
-            cout << "Inc p" << endl;
-        p++;
-        }
+        p++;  
     }
 }
 
@@ -78,34 +80,21 @@ void null_pointer_test() {
 
     int *p, *q;
     p = &x;
-    //q = NULL; // or q = nullptr; // points to nothing
+    q = NULL; // or q = nullptr; // points to nothing
 
 
-    cout << "Value of p : " << p << endl;
-    cout << "Value of *p : " << *p << endl;
-    cout << "Value of q : " << q << endl;
-    cout << "Value of *q : " << *q << endl; // check for NULL before using
+    cout << "Value of p =  : " << p << endl;
+    cout << "Value of *p = : " << *p << endl;
+    cout << "Value of q =  : " << q << endl; 
+    cout << "Value of *q=  : " << *q << endl; // check for NULL before using
 
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 int main() {
 
-    pointer_test();
+    //pointer_test();
 
     //pointer_test_array();
 
